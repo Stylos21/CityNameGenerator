@@ -6,6 +6,6 @@ This is a simple city name generator using an RNN (Recurrent Neural Network). I 
 
 ### Credits
 ***
-Used international city names from [@datasets](https://github.com/datasets)
+Used the City Names dataset from user: [@datasets](https://github.com/datasets)
 
-([Click me for actual CSV file](https://github.com/datasets/world-cities/blob/master/data/world-cities.csv))
+([Click me for actual dataset](https://github.com/datasets/world-cities/blob/master/data/world-cities.csv))
