@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import pickle
 from keras.models import Sequential
-from keras.layers import Dense, LSTM, Flatten
+from keras.layers import Dense, LSTM, Dropout
 from keras.utils import np_utils
 from keras.callbacks import ModelCheckpoint
 import re
