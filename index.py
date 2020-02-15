@@ -11,7 +11,7 @@ try:
     with open('data.pickle', 'rb') as file:
         xs, xs_, ys, y_binary, char2int, int2char, chartoint, processed, unique_letters = pickle.load(
             file)
-catch(FileNotFoundException e):
+except:
     data = pd.read_csv('world-cities.csv')
     cities = data['name']
     processed = []
@@ -77,7 +77,7 @@ try:
     model.compile(optimizer='adam',
                   loss='categorical_crossentropy', metrics=['accuracy'])
 
-catch(FileNotFoundException e):
+except:
         checkpoint = ModelCheckpoint(filepath, monitor='loss', verbose=1, save_best_only=True, mode='min')
         desired_callbacks = [checkpoint]
         model.fit(xs_, y_binary, epochs=100, callbacks=desired_callbacks)
